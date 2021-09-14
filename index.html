@@ -1,8 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <link rel="stylesheet" href="style.css">  
+    <script src="handler.js"></script>
 </head>
 
 <body>
@@ -14,59 +17,60 @@
     <div class="permissions">
         <div class="owner">
             <h2>Owner</h2>
-            <div id="check">
-                <input type="checkbox" name="read" value="Read">
+            <div id="readcheck">
+                <input type="checkbox" name="read" value="Read" id = "readcheck">
                 <label>Read</label>
             </div>
-            <div id="check">
-                <input type="checkbox" name="write" value="Write">
-                <label for="ownercheck">Write</label>
+            <div id="writecheck">
+                <input type="checkbox" name="write" value="Write" id = "writecheck">
+                <label">Write</label>
             </div>
-            <div id="check">
-                <input type="checkbox" name="execute" value="Execute">
-                <label for="ownercheck">Execute</label>
+            <div id="executecheck">
+                <input type="checkbox" name="execute" value="Execute" id = "executecheck">
+                <label>Execute</label>
             </div>
         </div>
         <div class="group">
             <h2>Group</h2>
-            <div id="check">
-                <input type="checkbox" name="read" value="Read">
+            <div id="readcheck">
+                <input type="checkbox" name="read" value="Read" id = "readcheck">
                 <label>Read</label>
             </div>
-            <div id="check">
-                <input type="checkbox" name="write" value="Write">
-                <label for="check">Write</label>
+            <div id="writecheck">
+                <input type="checkbox" name="write" value="Write" id = "writecheck">
+                <label>Write</label>
             </div>
-            <div id="check">
-                <input type="checkbox" name="execute" value="Execute">
-                <label for="ownercheck">Execute</label>
+            <div id="executecheck">
+                <input type="checkbox" name="execute" value="Execute" id = "executecheck">
+                <label>Execute</label>
             </div>
         </div>
         <div class="public">
             <h2>Public</h2>
-            <div id="check">
-                <input type="checkbox" name="read" value="Read">
+            <div id="readcheck">
+                <input type="checkbox" name="read" value="Read" id = "readcheck">
                 <label>Read</label>
             </div>
-            <div id="check">
-                <input type="checkbox" name="write" value="Write">
-                <label for="check">Write</label>
+            <div id="writecheck">
+                <input type="checkbox" name="write" value="Write" id = "writecheck">
+                <label>Write</label>
             </div>
-            <div id="check">
-                <input type="checkbox" name="execute" value="Execute">
-                <label for="ownercheck">Execute</label>
+            <div id="executecheck">
+                <input type="checkbox" name="execute" value="Execute" id = "executecheck">
+                <label>Execute</label>
             </div>
         </div>
     </div>
     <div class="inputs">
         <p3>Linux Permissions:</p3>
         <div id="firstpermission">
-            <input type="text" name="firstpermission" placeholder="0000">
+            <input type="text" name="firstpermission" placeholder="0000" id="firstpermission">
         </div>
         <div id="secondpermission">
-            <input type="text" name="secondpermission" placeholder="---------" >
+            <input type="text" name="secondpermission" placeholder="---------"  id="secondpermission">
         </div>
     </div>
+
 </body>
 
 </html>

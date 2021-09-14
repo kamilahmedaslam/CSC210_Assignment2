@@ -1,13 +1,20 @@
-function calculator(permission_type) {
-    var value = 0;
-    if (permission_type == "read") {
-        value = 4;
-    }
-    else if (permission_type == "write") {
-        value = 2;
-    }
-    else if (permission_type == "execute") {
-        value = 1;
-    }
+const read = 4;
+const write = 2;
+const execute = 1;
 
-}
+var countChecked = function() {
+    if(($('#readcheck').prop("checked") == true)){
+      $('#firstpermission').val(read);
+    }  
+    else if($('#writecheck').is(":checked")){
+        $('#firstpermission').val(write); 
+    }
+    else if($('#executecheck').is(":checked")){
+        $('#firstpermission').val(execute); 
+    }   
+  };
+
+countChecked();     
+$( "input[type=checkbox]" ).on("click", countChecked );
+
+
