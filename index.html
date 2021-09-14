@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+    <div class="intro">
+        <h1>Chmod Calculator</h1>
+        <p1>Welcome to our Chmod Calculator!</p1>
+        <p2>Check the desired boxes to see its value in other formats.</p2>
+    </div>
+    <div class="permissions">
+        <div class="owner">
+            <h2>Owner</h2>
+            <div id="check">
+                <input type="checkbox" name="read" value="Read">
+                <label>Read</label>
+            </div>
+            <div id="check">
+                <input type="checkbox" name="write" value="Write">
+                <label for="ownercheck">Write</label>
+            </div>
+            <div id="check">
+                <input type="checkbox" name="execute" value="Execute">
+                <label for="ownercheck">Execute</label>
+            </div>
+        </div>
+        <div class="group">
+            <h2>Group</h2>
+            <div id="check">
+                <input type="checkbox" name="read" value="Read">
+                <label>Read</label>
+            </div>
+            <div id="check">
+                <input type="checkbox" name="write" value="Write">
+                <label for="check">Write</label>
+            </div>
+            <div id="check">
+                <input type="checkbox" name="execute" value="Execute">
+                <label for="ownercheck">Execute</label>
+            </div>
+        </div>
+        <div class="public">
+            <h2>Public</h2>
+            <div id="check">
+                <input type="checkbox" name="read" value="Read">
+                <label>Read</label>
+            </div>
+            <div id="check">
+                <input type="checkbox" name="write" value="Write">
+                <label for="check">Write</label>
+            </div>
+            <div id="check">
+                <input type="checkbox" name="execute" value="Execute">
+                <label for="ownercheck">Execute</label>
+            </div>
+        </div>
+    </div>
+    <div class="inputs">
+        <p3>Linux Permissions:</p3>
+        <div id="firstpermission">
+            <input type="text" name="firstpermission" placeholder="0000">
+        </div>
+        <div id="secondpermission">
+            <input type="text" name="secondpermission" placeholder="---------" >
+        </div>
+    </div>
+</body>
+
+</html>
