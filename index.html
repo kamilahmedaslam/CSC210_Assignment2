@@ -18,58 +18,58 @@
         <div class="owner">
             <h2>Owner</h2>
             <div id="readcheck">
-                <input type="checkbox" name="read" value="Read" id = "readcheck">
+                <input type="checkbox" name="read" value="Read" id = "ownerRead" onclick="chmodResult()">
                 <label>Read</label>
             </div>
             <div id="writecheck">
-                <input type="checkbox" name="write" value="Write" id = "writecheck">
+                <input type="checkbox" name="write" value="Write" id = "ownerWrite" onclick="chmodResult()">
                 <label">Write</label>
             </div>
             <div id="executecheck">
-                <input type="checkbox" name="execute" value="Execute" id = "executecheck">
+                <input type="checkbox" name="execute" value="Execute" id = "ownerExecute" onclick="chmodResult()">
                 <label>Execute</label>
             </div>
         </div>
         <div class="group">
             <h2>Group</h2>
             <div id="readcheck">
-                <input type="checkbox" name="read" value="Read" id = "readcheck">
+                <input type="checkbox" name="read" value="Read" id = "groupRead" onclick="chmodResult()">
                 <label>Read</label>
             </div>
             <div id="writecheck">
-                <input type="checkbox" name="write" value="Write" id = "writecheck">
+                <input type="checkbox" name="write" value="Write" id = "groupWrite" onclick="chmodResult()">
                 <label>Write</label>
             </div>
             <div id="executecheck">
-                <input type="checkbox" name="execute" value="Execute" id = "executecheck">
+                <input type="checkbox" name="execute" value="Execute" id = "groupExecute" onclick="chmodResult()">
                 <label>Execute</label>
             </div>
         </div>
         <div class="public">
             <h2>Public</h2>
             <div id="readcheck">
-                <input type="checkbox" name="read" value="Read" id = "readcheck">
+                <input type="checkbox" name="read" value="Read" id = "publicRead" onclick="chmodResult()">
                 <label>Read</label>
             </div>
             <div id="writecheck">
-                <input type="checkbox" name="write" value="Write" id = "writecheck">
+                <input type="checkbox" name="write" value="Write" id = "publicWrite" onclick="chmodResult()">
                 <label>Write</label>
             </div>
             <div id="executecheck">
-                <input type="checkbox" name="execute" value="Execute" id = "executecheck">
+                <input type="checkbox" name="execute" value="Execute" id = "publicExecute" onclick="chmodResult()">
                 <label>Execute</label>
             </div>
         </div>
     </div>
-    <div class="inputs">
+    <form class="inputs">
         <p3>Linux Permissions:</p3>
-        <div id="firstpermission">
-            <input type="text" name="firstpermission" placeholder="0000" id="firstpermission">
+        <div id="firstpermission" display>
+            <input type="text" name="firstpermission" placeholder="000" id="chmodDecimal">
         </div>
         <div id="secondpermission">
-            <input type="text" name="secondpermission" placeholder="---------"  id="secondpermission">
+            <input type="text" name="secondpermission" placeholder="---------" id="chmodSymbol">
         </div>
-    </div>
+    </form>
 
 </body>
 
